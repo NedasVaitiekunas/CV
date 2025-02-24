@@ -1906,3 +1906,39 @@ hr {
     font-size: 14px;
   }
 }
+
+.banner {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 1px;
+    font-size: 14px;
+    font-weight: normal;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    font-family: inherit; /* Inherit navbar font */
+}
+
+.banner a {
+    color: white;
+    text-decoration: none;
+    font-weight: normal;
+}
+
+.banner a:hover {
+    text-decoration: underline;
+}
+
+.banner i {
+    font-size: 16px; /* Adjust icon size */
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+/* Prevent content from being hidden under the fixed banner */
+body {
+    margin-top: 40px;
+}
